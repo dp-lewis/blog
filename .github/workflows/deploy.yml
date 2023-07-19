@@ -30,12 +30,14 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    steps:    
-        - name: 📂 Sync files
-          uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    name: deploy
+    steps:
+        - name: Deploy file
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
           with:
-            server: ${{ secrets.FTP_DOMAIN }}
             username: ${{ secrets.FTP_USERNAME }}
+            server: ${{ secrets.FTP_DOMAIN }}
+            port: 22
+            remote_path: 'blog.david-lewis.com/'
+            sftp_only: true
             password: ${{ secrets.FTP_PASSWORD }}
-            server-dir: blog.david-lewis.com/
-            protocol: ftps
