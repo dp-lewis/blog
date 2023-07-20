@@ -13,18 +13,13 @@ jobs:
         uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run build --if-present
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    name: deploy
-    steps:
-        - name: Deploy file
-          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-          with:
-            username: ${{ secrets.FTP_USERNAME }}
-            server: ${{ secrets.FTP_DOMAIN }}
-            port: 22
-            local_path: './dist/'
-            remote_path: 'blog.david-lewis.com/'
-            sftp_only: true
-            password: ${{ secrets.FTP_PASSWORD }}
+      - name: Deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_DOMAIN }}
+          port: 22
+          local_path: './dist/'
+          remote_path: 'blog.david-lewis.com/'
+          sftp_only: true
+          password: ${{ secrets.FTP_PASSWORD }}
