@@ -10,11 +10,9 @@ const bgImage = `background-image: url('${frontmatter.articleImage}')`
   </head>
   <body>
     <article class="">
-        <header style={bgImage}>
-            <div class="py-12 mb-8 px-4 h-screen-half flex flex-col justify-center">
-                <h1 class="text-white text-center uppercase font-display text-6xl md:text-8xl"><span class="bg-black px-1">{frontmatter.title}</span></h1>
-                <time class="text-white text-center font-bold" datetime="1776-07-04"><span class="bg-black p-1">July 21, 2023</span></time>
-            </div>
+        <header style={bgImage} class="bg-cover py-12 mb-8 px-4 h-screen-half flex flex-col justify-center">
+            <h1 class="text-white text-center uppercase font-display text-6xl md:text-8xl"><span class="bg-black px-1">{frontmatter.title}</span></h1>
+            <time class="text-white text-center font-bold" datetime="1776-07-04"><span class="bg-black p-1">July 21, 2023</span></time>
         </header>
         <div class="m-auto max-w-2xl md:grid md:grid-cols-4 gap-8">
             <blockquote class="font-bold text-3xl md:text-right p-4 md:p-0">
