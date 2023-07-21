@@ -16,4 +16,8 @@ Fusce tellus diam, rutrum at pharetra eu, imperdiet nec lacus. Ut sit amet augue
 ## Curabitur interdum odio risus
 Vitae ornare lectus malesuada ut. Fusce suscipit posuere purus ac malesuada. Nunc elementum tempor risus sit amet viverra. Ut eget euismod arcu. Vivamus ac feugiat mi, quis eleifend ante. Pellentesque efficitur ex ultricies mauris consectetur finibus. In blandit et turpis id semper. Duis gravida diam accumsan metus volutpat volutpat. Phasellus varius turpis nec metus convallis interdum. Sed eu posuere quam. Sed aliquet convallis purus eu vulputate. Mauris accumsan eu lorem et pretium.
 
+```
+const doit = yes;
+```
+
 In lacinia sem viverra malesuada aliquam. Etiam dictum imperdiet augue, at elementum erat vestibulum a. Suspendisse lacinia luctus pharetra. Nullam semper interdum ipsum, non pretium erat. Integer ultricies erat ipsum, vel finibus lorem viverra at. Sed id tortor a enim euismod venenatis. Nam faucibus arcu vel mi aliquam, semper efficitur augue interdum. Phasellus consectetur nunc tempor porta convallis. Vestibulum nec lorem quis nunc tristique imperdiet. Ut fermentum orci ante, vitae rutrum neque hendrerit a. Mauris id magna eu nisl suscipit vestibulum in sed tellus. Nullam pellentesque neque a erat tristique, vel viverra leo volutpat. Curabitur luctus in augue id suscipit. Integer nec vulputate sem. Proin ultricies in arcu ut semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
