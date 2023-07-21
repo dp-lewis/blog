@@ -9,7 +9,7 @@ const bgImage = `background-image: url('${frontmatter.articleImage}')`
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <article class="">
+    <article class="mb-4">
         <header style={bgImage} class="bg-cover py-12 mb-8 px-4 h-screen-half flex flex-col justify-center">
             <h1 class="text-white text-center uppercase font-display text-6xl md:text-8xl"><span class="bg-black px-1">{frontmatter.title}</span></h1>
             <time class="text-white text-center font-bold" datetime="1776-07-04"><span class="bg-black p-1">July 21, 2023</span></time>
@@ -23,5 +23,26 @@ const bgImage = `background-image: url('${frontmatter.articleImage}')`
             </div>
         </div>
     </article>
+
+    <nav class="border border-slate rounded shadow bg-white fixed bottom-2 left-2 flex p-2">
+        <svg class="rounded" width="40" height="40" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="favicon">
+                    <g id="Group">
+                        <rect id="Rectangle" fill="#24292e" x="0" y="0" width="512" height="512"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" x="239" y="128" width="65" height="255"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" x="377" y="128" width="65" height="190"></rect>
+                        <path d="M71,155 C133.960461,155 185,199.771525 185,255 C185,310.228475 133.960461,355 71,355 L71,355 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+          </svg>
+
+        <a href="/" class="p-2">Home</a>    
+    </nav>
+
+    <footer class="bg-gray-900 p-6 text-center text-white">
+        &copy; 2023 David Lewis
+    </footer>
   </body>
 </html>
