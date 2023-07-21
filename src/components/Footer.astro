@@ -1,3 +1,17 @@
+---
+import Twitter from './socials/Twitter.astro';
+import Github from './socials/Github.astro';
+import LinkedIn from './socials/LinkedIn.astro';
+---
+
 <footer class="bg-gray-900 p-6 text-center text-white">
-    &copy; 2023 David Lewis
+    <div class="flex gap-3 justify-center mb-4">
+        <Twitter />
+        <Github />
+        <LinkedIn />
+    </div>
+    <div>
+        &copy; 2023 David Lewis
+    </div>
+
 </footer>

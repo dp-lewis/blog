@@ -14,13 +14,19 @@ const allPosts = await Astro.glob('../pages/articles/*.md');
 		<title>David Lewis</title>
 	</head>
 	<body>
-		<div class="p-8 h-screen grid">
+		<div class="p-8 h-screen grid bg-slate-200">
 		<Logo />
-		<h1 class="font-display text-6xl width-48 max-w-2xl">Hi, I&apos;m David <div>an engineering leader with a passion for UI</div></h1>
+			<div>
+				<h1 class="font-display text-5xl">Hi, I&apos;m David an engineering leader</h1>
+				<p class="text-2xl">by day, a meet up organiser and game developer by night</p>
+			</div>	
 		</div>
-		<div class="p-8 grid md:grid-cols-3 gap-4">
-		{allPosts.map((post) => <ArticleListing title={post.frontmatter.title} url={post.url} thumbnail={post.frontmatter.thumbnail} />)}
-		</div>
+		<section class="p-8">
+			<h1 class="text-2xl mb-4 font-bold">Latest articles</h1>
+			<ol class="grid md:grid-cols-5 gap-4">
+			{allPosts.map((post) => <ArticleListing title={post.frontmatter.title} url={post.url} thumbnail={post.frontmatter.thumbnail} />)}
+			</ol>
+		</section>
 		<Footer />
 	</body>
 </html>
