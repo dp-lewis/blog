@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
-
+import ArticleListing from '../components/ArticleListing.astro';
+import Logo from '../components/Logo.astro';
 const allPosts = await Astro.glob('../pages/articles/*.md');
 ---
 
@@ -13,8 +14,11 @@ const allPosts = await Astro.glob('../pages/articles/*.md');
 		<title>Astro</title>
 	</head>
 	<body>
+		<Logo />
 		<h1>David Lewis</h1>
-		{allPosts.map((post) => <li><a href={post.url}><img src={post.frontmatter.thumbnail} />{post.frontmatter.title}</a></li>)}
+		<div class="grid md:grid-cols-4">
+		{allPosts.map((post) => <ArticleListing title={post.frontmatter.title} url={post.url} thumbnail={post.frontmatter.thumbnail} />)}
+		</div>
 		<Footer />
 	</body>
 </html>

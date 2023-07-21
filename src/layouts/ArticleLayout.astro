@@ -3,8 +3,11 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import '@fontsource/lilita-one';
 const { frontmatter } = Astro.props
-
 const bgImage = `background-image: url('${frontmatter.articleImage}')`
+
+const mdHeadingSize = frontmatter.title.length < 20 ? 'text-8xl' : 'text-6xl';
+const defaultHeadingSize = frontmatter.title.length < 20 ? 'text-6xl' : 'text-4xl';
+
 ---
 <html lang="en">
   <head>
@@ -14,7 +17,7 @@ const bgImage = `background-image: url('${frontmatter.articleImage}')`
   <body>
     <article class="mb-4">
         <header style={bgImage} class="bg-cover py-12 mb-8 px-4 h-screen-half flex flex-col justify-center">
-            <h1 class="text-white text-center uppercase font-display text-6xl md:text-6xl"><span class="bg-black px-1">{frontmatter.title}</span></h1>
+            <h1 class=`text-white text-center uppercase font-display ${defaultHeadingSize} md:${mdHeadingSize}`><span class="bg-black px-1">{frontmatter.title}</span></h1>
             <time class="text-white text-center font-bold" datetime="1776-07-04"><span class="bg-black p-1">July 21, 2023</span></time>
         </header>
         <div class="m-auto max-w-2xl md:grid md:grid-cols-4 gap-4">
