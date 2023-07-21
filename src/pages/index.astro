@@ -11,12 +11,14 @@ const allPosts = await Astro.glob('../pages/articles/*.md');
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>David Lewis</title>
 	</head>
 	<body>
+		<div class="p-8 h-screen grid">
 		<Logo />
-		<h1>David Lewis</h1>
-		<div class="grid md:grid-cols-4">
+		<h1 class="font-display text-6xl width-48 max-w-2xl">Hi, I&apos;m David <div>an engineering leader with a passion for UI</div></h1>
+		</div>
+		<div class="p-8 grid md:grid-cols-3 gap-4">
 		{allPosts.map((post) => <ArticleListing title={post.frontmatter.title} url={post.url} thumbnail={post.frontmatter.thumbnail} />)}
 		</div>
 		<Footer />
