@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 articleImage: 'https://picsum.photos/1200/600'
 title: 'Kanban at home'
-pullquote: 'This is a pull quote for my article'
+pullquote: 'Kanban can improve the lead time to getting the laundry done by 33%'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius maximus nunc, hendrerit suscipit lacus pellentesque sit amet. Ut fringilla vitae ligula et rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam nec convallis nisi. Suspendisse potenti. Vivamus facilisis id tellus vel tempor. Phasellus luctus in justo convallis tristique. Pellentesque eget lectus nunc.

@@ -14,9 +14,9 @@ const bgImage = `background-image: url('${frontmatter.articleImage}')`
             <h1 class="text-white text-center uppercase font-display text-6xl md:text-8xl"><span class="bg-black px-1">{frontmatter.title}</span></h1>
             <time class="text-white text-center font-bold" datetime="1776-07-04"><span class="bg-black p-1">July 21, 2023</span></time>
         </header>
-        <div class="m-auto max-w-2xl md:grid md:grid-cols-4 gap-8">
-            <blockquote class="font-bold text-3xl md:text-right p-4 md:p-0">
-                {frontmatter.pullquote}
+        <div class="m-auto max-w-2xl md:grid md:grid-cols-4 gap-4">
+            <blockquote class="font-bold text-2xl md:text-right p-4 md:p-0">
+                &OpenCurlyQuote;{frontmatter.pullquote}&CloseCurlyQuote;
             </blockquote>
             <div class="col-span-3 px-4 prose">
             <slot />
