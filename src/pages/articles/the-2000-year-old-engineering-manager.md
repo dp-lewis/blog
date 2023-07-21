@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 articleImage: 'https://picsum.photos/1200/600'
 thumbnail: 'https://picsum.photos/300'
-title: 'Kanban at home'
+title: 'The 2,000 Year old Engineering Manager'
 pullquote: 'Kanban can improve the lead time to getting the laundry done by 33%'
 ---
 
